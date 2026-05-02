@@ -1,6 +1,4 @@
-:root {
-  --blue: #00acdc;
-}
+@use 'variables';
 
 body {
   margin: 0;
@@ -50,7 +48,7 @@ li {
 }
 
 .nav__link {
-  color: #060b35;
+  color: variables.$darker-color;
   text-decoration: none;
   display: flex;
   height: 60px;
@@ -60,7 +58,7 @@ li {
 }
 
 .is-active {
-  color: var(--blue);
+  color: variables.$light-blue;
 }
 
 .nav__link.is-active::after {
@@ -70,9 +68,9 @@ li {
   right: 0;
   bottom: 0;
   height: 4px;
-  background: var(--blue);
+  background: variables.$light-blue;
 }
 
 .nav__link:hover {
-  color: var(--blue);
+  color: variables.$light-blue;
 }

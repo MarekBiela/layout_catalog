@@ -4,7 +4,7 @@
   transition: transform 300ms;
   height: 408px;
   width: 200px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid variables.$light-grey;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,9 +90,9 @@
     margin-top: 16px;
     height: 40px;
     width: 100%;
-    background-color: #00acdc;
+    background-color: variables.$light-blue;
     border-radius: 5px;
-    color: white;
+    color: variables.$white;
     font-family: variables.$font-family;
     letter-spacing: variables.$font-spacing;
     font-size: 14px;
@@ -100,20 +100,16 @@
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    border: 1px solid #00acdc;
-    &:hover {
-      background-color: white;
-      color: #00acdc;
-    }
+    border: 1px solid variables.$light-blue;
   }
   &:hover {
     transform: scale(1.2);
     .card__title {
-      color: #34568b;
+      color: variables.$grey-blue;
     }
     .card__buy {
-      background-color: #fff;
-      color: #00acdc;
+      background-color: variables.$white;
+      color: variables.$light-blue;
     }
   }
 }
